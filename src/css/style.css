@@ -3,3 +3,5 @@
 @import url("base/main.css");
 @import url("layout/footer.css");
 @import url("layout/header.css");
+@import url("components/menu.css");
+@import url("components/hero.css");
