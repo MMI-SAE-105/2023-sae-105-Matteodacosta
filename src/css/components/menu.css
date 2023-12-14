@@ -66,3 +66,8 @@
     transition: all .4s;
     z-index: 1;
 }
+
+.menu-open .header__menu {
+    transform: translateX(0);
+}
+
