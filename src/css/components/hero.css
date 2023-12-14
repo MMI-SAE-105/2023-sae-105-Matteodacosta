@@ -45,3 +45,13 @@
     font-size: 1.2rem;
     color: var(--noir);
 }
+
+@media (max-width: 767px) {
+    .hero__content {
+        width: 100%;
+        top: 0;
+        bottom: auto;
+        transform: translate(-50%, 0);
+        z-index: 2;
+    }
+}
