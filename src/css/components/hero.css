@@ -40,3 +40,8 @@
     height: auto;
     margin-right: 20px;
 }
+
+.hero__text {
+    font-size: 1.2rem;
+    color: var(--noir);
+}
