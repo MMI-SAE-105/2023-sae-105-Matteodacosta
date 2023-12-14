@@ -53,5 +53,6 @@
         bottom: auto;
         transform: translate(-50%, 0);
         z-index: 2;
+        margin: 0;
     }
 }

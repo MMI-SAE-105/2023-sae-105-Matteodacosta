@@ -5,7 +5,7 @@
 }
 
 .header__logo {
-    /* styles for logo */
+    width: 6rem;
 }
 
 .header__nav-toggle {
