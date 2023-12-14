@@ -1,9 +1,21 @@
 .header {
     position: relative;
     background-color: var(--blanc);
-    
+
 }
 
 .header__logo {
     /* styles for logo */
+}
+
+.header__nav-toggle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
