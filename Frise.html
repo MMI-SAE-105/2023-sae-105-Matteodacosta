@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -59,6 +60,17 @@
                     </figure>
                 </div>
             </div>
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}"> Première image
+                    </a>
+                </li>
+                <li><a href="#ecran-2" class="caroussel_lien">Dexuième imaage</a></li>
+                <li><a href="#ecran-3" class="caroussel_lien">Troisième image</a></li>
+                <li><a href="#ecran-4" class="caroussel_lien">Quatrième image</a></li>
+                <li><a href="#ecran-5" class="caroussel_lien">Cinquième image</a></li>
+            </ul>
+        </div>
     </body>
+</body>
 
 </html>
