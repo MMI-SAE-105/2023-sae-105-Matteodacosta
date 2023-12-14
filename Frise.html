@@ -11,79 +11,82 @@
 
 <body>
 
-    <body>
-        <header class="header">
-            <img class="header__logo" src="public/img/LOGO.webp" alt="Logo">
-            <div class="header__nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
-                <div class="header__nav-toggle-bar"></div>
-            </div>
-            <nav class="header__menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link">Artiste</a></li>
-                    <li class="menu__item"><a href="Frise.html" class="menu__link">Galerie</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Billetterie</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-                </ul>
-                <h1> Les Dates </h1>
-                <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-                    <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
-                        class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"> &lt; </button>
-                    <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
-                        class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-                    <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+
+    <header class="header">
+        <img class="header__logo" src="public/img/LOGO.webp" alt="Logo">
+        <div class="header__nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="header__nav-toggle-bar"></div>
+        </div>
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="Artiste.html" class="menu__link">Artiste</a></li>
+                <li class="menu__item"><a href="Frise.html" class="menu__link">Galerie</a></li>
+                <li class="menu__item"><a href="Billeterie.html" class="menu__link">Billetterie</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+    </header>
+    <center>
+        <h1> Les Dates </h1>
+    </center>
+    <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
+        <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
+            aria-label="slide précedant"> &lt; </button>
+        <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-apres"
+            aria-label="slide suivant">></button>
+        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
                     hrefCourant = '#'+
                     [...$refs.parent.children]
                     .find(e=>e.getBoundingClientRect().x>=0)
                     .id">
-                        <div id=" ecran-1" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 2 (1).webp" alt="image ecran 1">
-                                <figcaption>Première image</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-2" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 4.webp" alt="image ecran 2">
-                                <figcaption>Deuxième image</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-3" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 5.webp" alt="image ecran 3">
-                                <figcaption>Troisième image</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-4" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 6.webp" alt="image ecran 4">
-                                <figcaption>Quatrième image</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-5" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 6.webp" alt="image ecran 5">
-                                <figcaption>Cinquième image</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-6" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/image 7.webp" alt="image ecran 6">
-                                <figcaption>sixième image</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <ul class="caroussel_liste-liens">
-                        <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">
-                                Première image
-                            </a>
-                        </li>
-                        <li><a href="#ecran-2" class="caroussel_lien">Dexuième imaage</a></li>
-                        <li><a href="#ecran-3" class="caroussel_lien">Troisième image</a></li>
-                        <li><a href="#ecran-4" class="caroussel_lien">Quatrième image</a></li>
-                        <li><a href="#ecran-5" class="caroussel_lien">Cinquième image</a></li>
-                    </ul>
-                </div>
-    </body>
+            <div id=" ecran-1" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 2 (1).webp" alt="image ecran 1">
+                    <figcaption>Première image</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 4.webp" alt="image ecran 2">
+                    <figcaption>Deuxième image</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 5.webp" alt="image ecran 3">
+                    <figcaption>Troisième image</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 6.webp" alt="image ecran 4">
+                    <figcaption>Quatrième image</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 6.webp" alt="image ecran 5">
+                    <figcaption>Cinquième image</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/image 7.webp" alt="image ecran 6">
+                    <figcaption>sixième image</figcaption>
+                </figure>
+            </div>
+        </div>
+        <ul class="caroussel_liste-liens">
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">
+                    Première image
+                </a>
+            </li>
+            <li><a href="#ecran-2" class="caroussel_lien">Dexuième imaage</a></li>
+            <li><a href="#ecran-3" class="caroussel_lien">Troisième image</a></li>
+            <li><a href="#ecran-4" class="caroussel_lien">Quatrième image</a></li>
+            <li><a href="#ecran-5" class="caroussel_lien">Cinquième image</a></li>
+        </ul>
+    </div>
+</body>
 </body>
 
 </html>
