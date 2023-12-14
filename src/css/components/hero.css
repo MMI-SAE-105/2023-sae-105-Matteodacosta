@@ -16,3 +16,11 @@
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
+.hero__image {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
