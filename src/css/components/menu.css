@@ -44,3 +44,10 @@
     transform: rotate(135deg);
     background-color: var(--noir);
 }
+
+.menu-open .header__nav-toggle-bar::before,
+.menu-open .header__nav-toggle-bar::after {
+    transform: rotate(90deg);
+    background-color: var(--noir);
+    top: 0;
+}
