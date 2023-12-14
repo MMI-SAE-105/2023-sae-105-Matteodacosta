@@ -71,3 +71,7 @@
     transform: translateX(0);
 }
 
+.menu-open,
+.menu-open {
+    overflow: hidden;
+}
