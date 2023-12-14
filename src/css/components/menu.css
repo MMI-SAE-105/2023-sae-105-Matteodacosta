@@ -36,6 +36,10 @@
     top: -10px;
 }
 
+.header__nav-toggle-bar::after {
+    top: 10px;
+}
+
 .menu-open .header__nav-toggle-bar {
     transform: rotate(135deg);
     background-color: var(--noir);
