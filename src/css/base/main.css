@@ -60,3 +60,8 @@
     color: var(--noir);
     margin-right: 20px;
 }
+
+.tarif__text {
+    font-size: 1.2rem;
+    color: var(--noir);
+}
