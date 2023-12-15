@@ -54,3 +54,9 @@
     align-items: center;
     margin-top: 20px;
 }
+
+.tarif__primarytext {
+    font-size: 1.2rem;
+    color: var(--noir);
+    margin-right: 20px;
+}
