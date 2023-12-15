@@ -17,3 +17,10 @@
     padding: 10px;
     margin-bottom: 20px;
 }
+
+.contact-form__button {
+    background-color: #8e735b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
