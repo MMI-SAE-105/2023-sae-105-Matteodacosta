@@ -1,0 +1,35 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__info,
+.footer__social,
+.footer__copyright {
+    margin-bottom: 20px;
+}
+
+.footer__social {
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    margin-right: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__icon {
+    width: 100%;
+    max-width: 25px;
+    height: auto;
+    margin: 0 auto;
+
+
+}

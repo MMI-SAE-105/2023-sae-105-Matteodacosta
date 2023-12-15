@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <header class="header">
+        <a href="index.html" class="header__logo-link">
+            <img class="header__logo" src="public/img/LOGO.webp" alt="Logo">
+        </a>
+        <div class="header__nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="header__nav-toggle-bar"></div>
+        </div>
+
+        <nav class="header__menu">
+
+            <ul class="menu__list">
+
+                <li class="menu__item"><a href="Artiste.html" class="menu__link">Artiste</a></li>
+                <li class="menu__item"><a href="Frise.html" class="menu__link">Galerie</a></li>
+                <li class="menu__item"><a href="Billeterie.html" class="menu__link">Billetterie</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+
+
+        </nav>
+
+        </div>
+
+    </header>
     <center>
         <h1>Le Palais de L'assemblée </h1>
     </center>
 </body>
+
 </html>
