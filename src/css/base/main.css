@@ -132,7 +132,7 @@ a {
 .lecorbusier__image {
     max-width: 100px;
     margin-bottom: 10px;
-    
+
 }
 
 .lecorbusier__desc {
@@ -147,4 +147,75 @@ a {
     border: 1px solid black;
     padding: 15px;
     border-radius: 8px;
+}
+
+.artiste_element {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.artiste_element__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.artiste_element__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artiste_element__text {
+    border: 1px solid;
+    background: #9D724A;
+    color: white;
+    padding: 15px;
+}
+
+.oeuvre1__content {
+    margin-top: 40px;
+}
+
+.oeuvre1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.oeuvre1__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.oeuvre1__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oeuvre1__text-container {
+    text-align: center;
+}
+
+.oeuvre1__text {
+    margin-bottom: 20px;
+}
+
+.oeuvre1__image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.oeuvre1__image {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 500px;
 }
