@@ -48,3 +48,9 @@
 .tarif__features {
     margin-top: 20px;
 }
+
+.tarif__feature {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
