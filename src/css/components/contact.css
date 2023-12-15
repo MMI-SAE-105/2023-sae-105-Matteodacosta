@@ -10,3 +10,10 @@
 .contact__description {
     font-size: 18px;
 }
+
+.contact__input,
+.contact__textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
